@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Birthday
+{% endblock %}
+
+{% block content %}
+<!---cards start-->
+
+<style>
+.card img{
+  width: 100%;
+    height: 300px;       /* Or any fixed height you prefer */
+    object-fit: cover;   /* Maintains aspect ratio, fills container */
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+.card-group {
+  margin-bottom: 50px; /* space below every card-group */
+}
+
+</style>
+  <div class="card-group">
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/birth 1.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Elegant Birthday Bash</h5>
+        <p class="card-text"> Celebrate in style with this luxurious purple-themed birthday setup, perfect for classy and intimate gatherings.</p>
+          <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+      
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/birth2.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sweet Treat Party Vibes</h5>
+        <p class="card-text"> Add some sugar and sparkle with this fun and quirky birthday theme, complete with vibrant party props and candy vibes.</p>
+        <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/birth 3.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Magical Garden Celebration</h5>
+        <p class="card-text"> Host a dreamy birthday night under the stars with this candle-lit outdoor setup, ideal for romantic or nature-inspired birthdays.</p>
+         <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-group">
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/birth 4.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Retro Birthday Fiesta</h5>
+        <p class="card-text"> Turn back time with this nostalgic retro-themed birthday party setup, filled with fun colors and vintage charm.</p>
+       <!-- Rating & Book Button in One Line -->
+       <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/birth 5.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Blooming Birthday Brunch</h5>
+        <p class="card-text"> Embrace nature with a floral arch and serene outdoor décor—perfect for a spring or garden-style birthday gathering.</p>
+        <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/birth 6.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Charming Cake Celebration</h5>
+        <p class="card-text">A sweet and elegant birthday scene featuring a pastel cake table, ideal for kids and adults alike.
+
+        </p>
+         <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; font-size: 24px; font-weight: bold; margin: 20px 0;">
+{% endblock %}

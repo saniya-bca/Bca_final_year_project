@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{%load static %}
+{% block title %}
+engagement
+{% endblock %}
+
+{% block content %}
+<!---cards start-->
+
+<style>
+.card img{
+  width: 100%;
+    height: 300px;       /* Or any fixed height you prefer */
+    object-fit: cover;   /* Maintains aspect ratio, fills container */
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+.card-group {
+  margin-bottom: 50px; /* space below every card-group */
+}
+</style>
+  <div class="card-group">
+    <div class="card" style="margin: 0 15px; ">
+      <img src="{% static 'images/l1.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Rustic Romance Evening</h5>
+        <p class="card-text">Candlelit elegance meets vintage charm. Celebrate love in a warm, cozy atmosphere with glowing lights and floral magic.</p>
+          <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+      
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/enage1.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Blush Garden Fairytale</h5>
+        <p class="card-text">Step into a dreamy floral world of love and wonder. Perfect for those who adore soft pinks and magical vibes.</p>
+        <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <!-- <button class="btn btn-primary">Book Now</button> -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/enage2.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Royal Drapes Ceremony</h5>
+        <p class="card-text">Feel like royalty under golden curtains and elegant lighting. A luxurious setup for an unforgettable engagement.</p>
+         <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <!-- <button class="btn btn-primary">Book Now</button> -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-group">
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/enage3.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Crimson Elegance Night</h5>
+        <p class="card-text">An enchanting mix of deep reds and glowing petals. Make a bold statement with this dramatic and romantic ambiance.</p>
+       <!-- Rating & Book Button in One Line -->
+       <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <!-- <button class="btn btn-primary">Book Now</button> -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/enage5.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Enchanted Pink Paradise</h5>
+        <p class="card-text">Celebrate your love surrounded by lush pink blooms and soft lights. A floral dreamscape made for sweet memories.</p>
+        <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <!-- <button class="btn btn-primary">Book Now</button> -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/enage7.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Candlelight Garden Soirée</h5>
+        <p class="card-text">Dine and celebrate under the stars with a table set for romance. Ideal for intimate and elegant engagement moments.</p>
+         <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <!-- <button class="btn btn-primary" onclick="window.location.href=">Book Now</button> -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; font-size: 24px; font-weight: bold; margin: 20px 0;">
+{% endblock %}

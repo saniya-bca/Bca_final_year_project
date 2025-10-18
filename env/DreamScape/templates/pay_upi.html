@@ -1,0 +1,117 @@
+
+<!--  templates/pay_upi.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pay via UPI - DreamScape</title>
+    <link rel="stylesheet" href="{% static 'css/payment.css' %}">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3eafc);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .payment-container {
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 0.7s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        form {
+            margin-top: 25px;
+            text-align: left;
+        }
+
+        form p {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        input[type="text"]:focus {
+            border-color: #00bcd4;
+            outline: none;
+        }
+
+        .confirm-payment-btn {
+            width: 100%;
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .confirm-payment-btn:hover {
+            background-color: #019bab;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Pay via UPI</h2>
+        <p><strong>Event:</strong> {{ event.eventname }}</p>
+        <p><strong>Amount:</strong> ₹{{ event.amount }}</p>
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="confirm-payment-btn">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>

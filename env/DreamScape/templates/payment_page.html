@@ -1,0 +1,67 @@
+<style>
+    body {
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .payment-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        width: 400px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .payment-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .payment-card h2 {
+        color: #343a40;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .payment-card p {
+        font-size: 18px;
+        color: #495057;
+        margin: 10px 0;
+    }
+
+    .payment-card strong {
+        color: #212529;
+    }
+
+    .payment-card button {
+        background: linear-gradient(to right, #6f42c1, #6610f2);
+        border: none;
+        color: #fff;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-top: 20px;
+    }
+
+    .payment-card button:hover {
+        background: linear-gradient(to right, #6610f2, #6f42c1);
+    }
+</style>
+
+<div class="payment-card">
+    <h2>Complete Your Payment</h2>
+    <p><strong>Event:</strong> {{ event.eventname }}</p>
+    <p><strong>Amount:</strong> ₹{{ event.amount }}</p>
+
+    <form action="{% url 'choose_payment' event.id %}" method="get">
+        <button type="submit">Pay Now</button>
+    </form>
+</div>

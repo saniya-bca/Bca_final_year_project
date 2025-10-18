@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+wedding
+{% endblock %}
+
+{% block content %}
+<!---cards start-->
+
+<style>
+.card img{
+  width: 100%;
+    height: 300px;       /* Or any fixed height you prefer */
+    object-fit: cover;   /* Maintains aspect ratio, fills container */
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+.card-group {
+  margin-bottom: 50px; /* space below every card-group */
+}
+
+</style>
+  <div class="card-group">
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/wed 1.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Golden Blossom Banquet</h5>
+        <p class="card-text">An elegant floral paradise with golden hues — perfect for graceful and grand celebrations.</p>
+          <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+      
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/wed 2.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Twilight Luxe Affair</h5>
+        <p class="card-text">Immerse in a romantic candlelit ambiance designed for intimate and luxurious evenings.</p>
+        <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <!-- <button class="btn btn-primary">Book Now</button> -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/wed 3.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">White Orchid Dining</h5>
+        <p class="card-text"> A sophisticated white-themed dining experience crafted for elite and classy gatherings.</p>
+         <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <!-- <button class="btn btn-primary">Book Now</button> -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-group">
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/wed 4.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Botanical Bliss Wedding</h5>
+        <p class="card-text">A serene blend of modern elegance and nature’s charm for your perfect “I do” moment.</p>
+       <!-- Rating & Book Button in One Line -->
+       <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <!-- <button class="btn btn-primary">Book Now</button> -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/wed 5.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Oceanview Vows</h5>
+        <p class="card-text">Say “forever” with a breathtaking sea breeze and floral fantasy at your feet.</p>
+        <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <!-- <button class="btn btn-primary">Book Now</button> -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/wed 6.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Rose Draped Romance</h5>
+        <p class="card-text"> Step into your fairytale under a cascade of blush blooms and dreamy pink drapes.</p>
+         <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <!-- <button class="btn btn-primary" onclick="window.location.href='{% url 'userevent' %}'">Book Now</button> -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; font-size: 24px; font-weight: bold; margin: 20px 0;">
+{% endblock %}

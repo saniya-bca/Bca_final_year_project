@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Bachelor
+{% endblock %}
+
+{% block content %}
+<!---cards start-->
+
+<style>
+.card img{
+  width: 100%;
+    height: 300px;       /* Or any fixed height you prefer */
+    object-fit: cover;   /* Maintains aspect ratio, fills container */
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+.card-group {
+  margin-bottom: 50px; /* space below every card-group */
+}
+</style>
+  <div class="card-group">
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/far 7.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Elegant Farewell Dinner</h5>
+        <p class="card-text">A classy and warm farewell setup with golden hues and an intimate dinner arrangement to say goodbye in style.</p>
+          <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+      
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/far 2.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Starry Night Farewell</h5>
+        <p class="card-text">Celebrate with sparkle using this luxurious black and gold farewell décor, complete with snacks, drinks, and heartfelt vibes.</p>
+        <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/far 3.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Color Pop Farewell Bash</h5>
+        <p class="card-text"> A vibrant and cheerful farewell setup with pastel balloons and playful charm—perfect for school, college, or office send-offs.
+
+        </p>
+         <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-group">
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/far 4.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Chic Farewell Celebration</h5>
+        <p class="card-text"> Sleek and stylish black-and-gold themed farewell that blends fun and elegance, perfect for heartfelt goodbyes.</p>
+       <!-- Rating & Book Button in One Line -->
+       <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/far 5.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Rose Gold Goodbye</h5>
+        <p class="card-text">A modern and picture-perfect farewell decoration featuring trendy rose gold tones and balloon artistry.</p>
+        <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin: 0 15px;">
+      <img src="{% static 'images/far 8.jpg' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bright Farewell Party</h5>
+        <p class="card-text">Brighten up the farewell mood with this orange-themed festive décor, ideal for sending off colleagues or classmates with joy.</p>
+         <!-- Rating & Book Button in One Line -->
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <!-- ⭐⭐⭐⭐⭐ Stars -->
+        <div style="color: gold; font-size: 18px;">
+          ★ ★ ★ ★ ☆
+        </div>
+        
+        <!-- Book Now Button -->
+        <a href="/userevent/" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; font-size: 24px; font-weight: bold; margin: 20px 0;">
+{% endblock %}

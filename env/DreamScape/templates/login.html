@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<style>
+  body {
+    background-image: url("{% static 'images/bg2.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .form-container {
+    margin-top: 80px;
+    padding: 40px 30px;
+    background-color: rgb(254, 254, 254);
+    border: 2px solid #f0c0c0;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 450px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-container h4 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #333;
+  }
+</style>
+
+<!-- Required Meta + CSS -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Login Form -->
+<section class="container-fluid">
+  <section class="row justify-content-center">
+    <section class="col-12 col-sm-6 col-md-4">
+      <form class="form-container" action="/login/" method="post">
+        {% csrf_token %}
+
+        <div class="form-group">
+          <h4 class="text-center font-weight-bold"> Login </h4>
+
+          <!-- ✅ Messages block starts here -->
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }} alert-dismissible fade show mt-2" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            {% endfor %}
+          {% endif %}
+          <!-- ✅ Messages block ends -->
+
+          <input type="email" name="email" class="form-control mt-3" id="Inputuser1" placeholder="Enter email" autocomplete="off">
+        </div>
+
+        <div class="form-group mt-2">
+          <input type="password" name="password" class="form-control" id="InputPassword1" placeholder="Password" autocomplete="new-password">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block mt-3">Login</button>
+
+        <div class="form-footer text-center mt-3">
+          <p> Don't have an account? <a href="/signup1/">Sign Up</a></p>
+        </div>
+      </form>
+    </section>
+  </section>
+</section>
+
+<!-- Required JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+{% endblock %}

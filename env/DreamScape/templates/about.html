@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+About
+{% endblock %}
+
+{% block content %}
+<style>
+    .contact-banner-text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+    
+    .contact-banner-text h1 {
+        font-size: 4rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .contact-banner-text p {
+        font-size: 1.35rem;
+    }
+    
+    </style>
+ <!-- Banner Section -->
+ <div style="position: relative; background: url('{% static 'images/bg20.png' %}') no-repeat center center/cover;
+  height: 60vh; width:100%; display: flex; align-items: center; justify-content: center; padding: 0px;  display: block; ">
+    
+</div>
+<div class="contact-banner-text">
+    <h1>About Us</h1>
+    <p>"Because Every Celebration Deserves to Be Magical."</p>
+</div>
+<!-- About Us Content -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images/about us.png' %}" alt="About Us Image" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="col-md-6">
+            <h2 style="font-weight: bold;">Who We Are</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6;">
+                We are a team of creative event planners who specialize in organizing weddings, corporate events, birthday parties, and much more. 
+                With years of experience, we aim to make your special moments truly unforgettable.
+            </p>
+            <h3 style="margin-top: 20px; font-weight: bold;">Our Vision</h3>
+            <p style="font-size: 1.1rem; line-height: 1.6;">
+                Our vision is to redefine event planning with innovation, excellence, and personalized service. 
+                We believe in turning ideas into reality with a touch of perfection.
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

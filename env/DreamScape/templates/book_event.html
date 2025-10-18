@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-success">
+            <strong>{{ message }}</strong>
+        </div>
+    {% endfor %}
+{% endif %}
+</div>
+
+<div class="container tm-mt-big tm-mb-big center">
+<div class="row">
+<div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+<div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+
+  <div class="row">
+      <div class="col-12" >
+        <h2 class="tm-block-title d-inline-block text-center w-100">Event Booking</h2>
+
+
+
+      </div>
+  </div>
+
+<div class="row tm-edit-product-row">
+  <div class="col-xl-6 col-lg-6 col-md-12">
+    <form class="tm-edit-product-form" method="POST" onsubmit="return validateForm()" action="/userevent/">
+      {% csrf_token %}
+      <div class="form-group mb-3">
+        <label for="name">Enter Full Name</label>
+        <input id="name" name="name" type="text"  class="form-control validate" required />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="eventname">Event Name</label>
+        <input id="eventname" name="eventname" type="text" class="form-control validate" required />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="email">Enter Email</label>
+        <input id="email" name="email" type="email"  class="form-control validate" required />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="date">Enter Event Date</label>
+        <input id="date" name="date" type="date" class="form-control validate" required />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="mobile">Enter Mobile Number</label>
+        <input id="mobile" name="mobile" type="text" class="form-control validate" required />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="altmobile">Enter Alternate Mobile Number</label>
+        <input id="altmobile" name="altmobile" type="text" class="form-control validate" required />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="amount">Enter Amount you can Afford</label>
+        <input id="amount" name="amount" type="text" class="form-control validate" required />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="description">Enter Description about Event</label>
+        <textarea name="description" id="description" class="form-control validate" rows="3" required></textarea>
+      </div>
+
+      <br>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary btn-block text-uppercase">Book Event</button>
+        <br><br>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- JavaScript Validation Script -->
+<script>
+function validateForm() {
+    let fields = ["name", "eventname", "email", "date", "mobile", "altmobile", "amount", "description"];
+    
+    for (let i = 0; i < fields.length; i++) {
+        let field = document.getElementById(fields[i]);
+        if (field.value.trim() === "") {
+            alert("Please fill out all fields before submitting.");
+            field.focus();
+            return false;
+        }
+    }
+
+    return true;
+}
+</script>
+
+{% endblock %}

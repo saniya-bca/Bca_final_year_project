@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Adminlogin
+{% endblock %}
+
+{% block content %}
+<style>
+  body {
+    background-image: url("{% static 'images/bg6.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+    .user_card {
+        max-width: 100%;
+        background: #f9f9f9;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 60px;
+    }
+
+    #form-title {
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .input-icon-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .input-icon-group span {
+        background: #f1f1f1;
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        border-right: none;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .input-icon-group input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-left: none;
+        background-color: #e9f0ff;
+        border-radius: 0 8px 8px 0;
+        outline: none;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .topcorner {
+        position: absolute;
+        top: 80px;
+        right: 0;
+    }
+</style>
+
+
+<div class="topcorner" style="position:absolute; top:80px;right:0;">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert {{ message.tags }} m-2" id="msg" role="alert">
+                <div class="text-center">{{ message }}</div>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+
+<script>
+// hide message after 3 seconds
+setTimeout(function(){
+    let msg = document.getElementById("msg");
+    if(msg) msg.style.display = "none";
+}, 3000);
+</script>
+
+
+<br>
+<div class="container h-100">
+<div class="d-flex justify-content-center h-100">
+<div class="user_card">
+<div class="d-flex justify-content-center">
+    <h3 id="form-title">ADMIN LOGIN</h3>
+</div>
+
+
+<div class="d-flex justify-content-center form_container">
+    <form method="POST" action="">
+        {% csrf_token%}
+        <div class="input-group mb-3">
+            <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" name="email" placeholder="Enter Email " class="form-control" autocomplete="off">
+        </div>
+        <div class="input-group mb-2">
+            <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-key"></i></span>
+            </div>
+                <input type="password" name="password" placeholder="Enter Password" class="form-control" autocomplete="new-password">
+        </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+            <!-- <div class="d-flex justify-content-center mt-3 login_container">
+                 <input class="btn login_btn" type="submit" value="Login"> 
+               </div>-->
+    </form>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+<br><br>
+
+{% endblock %}
