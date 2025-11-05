@@ -1,4 +1,5 @@
 🪄 DreamScape – Event Management System
+
 📖 About the Project
 
 DreamScape is a Django-based Event Management System designed to simplify the process of planning and managing events such as weddings, engagements, parties, and corporate gatherings.
@@ -7,6 +8,7 @@ It allows users to browse events, book services, make payments, and manage booki
 Admins can monitor bookings, manage users, view statistics, and generate reports through a fully functional dashboard.
 
 ✨ Key Features
+
 👥 User Side
 
 Browse and view event packages (weddings, parties, engagements, etc.)
