@@ -1,13 +1,11 @@
-🪄 DreamScape – Event Management System
-
-📖 About the Project
+# 🪄 DreamScape – Event Management System
 
 DreamScape is a Django-based Event Management System designed to simplify the process of planning and managing events such as weddings, engagements, parties, and corporate gatherings.
 It allows users to browse events, book services, make payments, and manage bookings — all through an elegant and responsive web interface.
 
 Admins can monitor bookings, manage users, view statistics, and generate reports through a fully functional dashboard.
 
-✨ Key Features
+# ✨ Key Features
 
 👥 User Side
 
@@ -45,7 +43,8 @@ Database	SQLite / MySQL
 Charts	Chart.js / Recharts
 Payments	Paytm Integration (Demo)
 Admin Dashboard	Custom Django templates + dynamic data rendering
-🛠️ Installation & Setup
+
+# 🛠️ Installation & Setup
 1. Clone the repository
 git clone https://github.com/<your-username>/DreamScape.git
 cd DreamScape
@@ -68,19 +67,19 @@ python manage.py createsuperuser
 6. Run the development server
 python manage.py runserver
 
-
 Then open your browser at http://127.0.0.1:8000/
  🎉
 
 📊 Dashboard Preview (Admin Panel)
 
-![Dashboard Screenshot]<img width="917" height="344" alt="Image" src="https://github.com/user-attachments/assets/b9d573e8-1658-4835-a156-c0e152a0a369" />
+Dashboard Screenshot:
+<img width="917" height="344" alt="Image" src="https://github.com/user-attachments/assets/b9d573e8-1658-4835-a156-c0e152a0a369" />
 
-![Bookings Page]
+Bookings Page:
 <img width="917" height="433" alt="Image" src="https://github.com/user-attachments/assets/263e7931-f899-4b3c-ae92-e559c029865d" />
 <img width="917" height="158" alt="Image" src="https://github.com/user-attachments/assets/fc6cb775-f57c-4747-b745-9b26cae5600a" />
 
-🧠 Project Structure
+# 🧠 Project Structure
 event_project/
 │
 ├── DreamScape/
@@ -125,7 +124,7 @@ View most booked events
 
 Bar and pie charts for bookings and revenue stats
 
-👩‍💻 Developed By
+# 👩‍💻 Developed By
 
 Saniya Shaikh
 💼 Final Year Project
