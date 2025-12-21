@@ -74,16 +74,10 @@ Then open your browser at http://127.0.0.1:8000/
 
 📊 Dashboard Preview (Admin Panel)
 
-Add your screenshots here (after running the project):
-
-/DreamScape/static/screenshots/dashboard.png
-/DreamScape/static/screenshots/bookings.png
-
-
-Example section:
-
 ![Dashboard Screenshot]<img width="917" height="344" alt="Image" src="https://github.com/user-attachments/assets/b9d573e8-1658-4835-a156-c0e152a0a369" />
-![Bookings Page]<img width="917" height="433" alt="Image" src="https://github.com/user-attachments/assets/263e7931-f899-4b3c-ae92-e559c029865d" />
+
+![Bookings Page]
+<img width="917" height="433" alt="Image" src="https://github.com/user-attachments/assets/263e7931-f899-4b3c-ae92-e559c029865d" />
 <img width="917" height="158" alt="Image" src="https://github.com/user-attachments/assets/fc6cb775-f57c-4747-b745-9b26cae5600a" />
 
 🧠 Project Structure
