@@ -134,6 +134,6 @@ Bar and pie charts for bookings and revenue stats
 
 Saniya Shaikh
 💼 Final Year Project
-💌 [Add your email or LinkedIn link here]
+💌 saniya4572@gmail.com
 
 ⭐ If you like this project, don’t forget to star the repo!
