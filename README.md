@@ -82,7 +82,7 @@ Add your screenshots here (after running the project):
 
 Example section:
 
-![Dashboard Screenshot](static/screenshots/dashboard.png)
+![Dashboard Screenshot]<img width="917" height="344" alt="Image" src="https://github.com/user-attachments/assets/b9d573e8-1658-4835-a156-c0e152a0a369" />
 ![Bookings Page](static/screenshots/bookings.png)
 
 🧠 Project Structure
